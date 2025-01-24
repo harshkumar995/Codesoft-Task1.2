@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1e1e2f, #121212);
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #11c9cb, #2575fc);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+.hero-text h1 span {
+  color: #ffd700;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ffd700;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ffa500;
+  transform: translateY(-5px);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.container p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #d3d3d3;
+}
+
+.skills-grid,
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-card,
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e2f;
+}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Harsh</span></h1>
+        <p>Web Developer | Tech Enthusiast | Problem Solver</p>
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate Computer Science student specializing in crafting web solutions that combine modern design with functionality. I enjoy working with technologies like HTML, CSS, JavaScript, and collaborating on open-source projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>GitHub, VS Code</p>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <p>Communication, Teamwork</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A modern portfolio showcasing my skills, projects, and contact information.</p>
+        </div>
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>Developed a weather app with live data using APIs and JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: harshkumar11@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/harsh-profile" target="_blank">github.com/harsh-profile</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Harsh's Portfolio</p>
+  </footer>
+</body>
+</html>
